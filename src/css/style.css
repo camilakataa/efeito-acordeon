@@ -1,0 +1,89 @@
+body {
+    background-color: #E5E5E5;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.acordeon {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    width: 655px;
+    height: 347px;
+    border-radius: 25px;
+    box-shadow: 0 27px 49px -25px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.acordeon .image {
+    position: absolute;
+    left: -90px;
+    width: 310px;
+    height: 310px;
+    margin-top: 33px;
+}
+
+.acordeon .faq {
+    width: 90%;
+    padding-left: 225px;
+}
+
+.acordeon .faq .titulo {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.acordeon .faq .duvidas .duvida {
+    cursor: pointer;
+    background-image: url(../images/seta-fechada.png);
+    background-repeat: no-repeat;
+    background-position: top 8px right 0;
+    background-size: 12px;
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.acordeon .faq .duvidas .duvida:last-child {
+    border-bottom: none;
+}
+
+.acordeon .faq .duvidas .duvida .duvida-titulo {
+    font-size: 17px;
+    font-weight: 500;
+    padding-bottom: 15px;
+    transition: 0.2s ease;
+    width: 90%;
+}
+
+.acordeon .faq .duvidas .duvida .duvida-titulo:hover {
+    color: #f47c57;
+}
+
+.acordeon .faq .duvidas .duvida .duvida-resposta {
+    font-size: 15px;
+    font-weight: 300;
+    padding-bottom: 15px;
+    display: none;
+}
+
+/* ESTILOS DE ITEM DE ACORDEON ATIVO */ 
+
+.acordeon .faq .duvidas .duvida.ativa h2 {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.acordeon .faq .duvidas .duvida.ativa .duvida-resposta {
+    display: block;
+}
+
+.acordeon .faq .duvidas .duvida.ativa {
+    background-image: url(../images/seta-aberta.png) ;
+}
